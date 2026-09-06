@@ -26,7 +26,9 @@ Closest alternatives, if you want to switch later:
 
 ## Present
 
-Open `index.html` in a browser. Arrow keys, fullscreen (`F`), overview (`O`), and speaker notes (`S`) all work from the file.
+Hosted on GitHub Pages: https://refaelsh.github.io/distro-hopping-deck/
+
+Or open `index.html` in a browser. Arrow keys, fullscreen (`F`), overview (`O`), and speaker notes (`S`) all work from the file.
 
 ## Live reload
 
