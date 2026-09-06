@@ -1,0 +1,6 @@
+.bundle/*
+!.bundle/config
+.DS_Store
+*.log
+screenshots/
+node_modules/

@@ -1,0 +1,18 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    asciidoctor (2.0.26)
+    asciidoctor-revealjs (5.2.0)
+      asciidoctor (>= 2.0.0, < 3.0.0)
+    webrick (1.9.2)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  asciidoctor-revealjs (= 5.2.0)
+  webrick (~> 1.9)
+
+BUNDLED WITH
+   2.6.9

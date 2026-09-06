@@ -1,0 +1,730 @@
+= Distro Hopping: A Penguin's Guide to Commitment Issues
+Refael Sheinker
+:notitle:
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@4.5.0
+:revealjs_theme: black
+:customcss: css/theme.css
+:revealjs_width: 1920
+:revealjs_height: 1080
+:revealjs_margin: 0.04
+:revealjs_center: false
+:revealjs_hash: true
+:revealjs_history: true
+:revealjs_slideNumber: c/t
+:revealjs_transition: fade
+:revealjs_transitionSpeed: fast
+:revealjs_controls: true
+:revealjs_progress: true
+:revealjs_pdfseparatefragments: false
+:source-highlighter: highlightjs
+:highlightjs-theme: https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css
+:icons: font
+:replacements!:
+
+ifndef::backend-revealjs[]
+This file is a Reveal.js deck. Build it with `bundle exec ruby build.rb`.
+endif::[]
+
+[%notitle]
+== Title
+
+[.hero]
+--
+++++
+<div class="term">
+  <div class="term-bar">
+    <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+    <span class="term-title">tonight-itinerary.sh</span>
+  </div>
+  <pre><span class="prompt">$</span> cat tonight-itinerary.sh
+<span class="green">./distro-hop --all --regrets 0</span><span class="cursor"></span></pre>
+</div>
+++++
+
+[.kicker]#Internal Tech Talk · 2026#
+[.slide-title]#Distro Hopping: A Penguin's Guide to Commitment Issues#
+
+[.tagline]#“Six operating systems. One hard drive. Zero regrets.”#
+
+[.pills]
+****
+[.pill.ubuntu]#Ubuntu#
+[.pill.debian]#Debian#
+[.pill.slackware]#Slackware#
+[.pill.mint]#Linux Mint#
+[.pill.arch]#Arch#
+[.pill.nixos]#NixOS#
+****
+
+++++
+<div class="hero-foot">
+  <span>13 slides · one very tired hard drive</span>
+  <span>Refael Sheinker — 2026</span>
+</div>
+++++
+--
+
+[%notitle]
+== What Is Distro Hopping?
+
+[.kicker]#DEFINITION#
+[.slide-title]#What Is Distro Hopping?#
+
+++++
+<div class="agenda">
+  <div class="agenda-copy">
+    <p class="lede">“The noble Linux tradition of installing a new operating system every time you get bored — usually at 23:00 the night before a deadline.”</p>
+    <a class="card accent-purple yt-card" href="https://www.youtube.com/watch?v=vAWLxOUOQmM" target="_blank" rel="noopener noreferrer">
+      <div class="kicker purple">// WATCH · 5 min</div>
+      <h3>Linux Broke Me Before It Made Me a Genius</h3>
+      <p>Five stages of Linux. Distro hopping is dating that ends in GRUB rescue.</p>
+    </a>
+  </div>
+  <div class="term">
+    <div class="term-bar">
+      <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+      <span class="term-title">user@linux:~$ ./tonight's-itinerary.sh</span>
+    </div>
+    <div class="term-body itinerary">
+      <div class="comment"># select your stop</div>
+      <div class="yellow" style="margin: 0.4em 0 0.6em;">[ TONIGHT'S ITINERARY ]</div>
+      <div class="row"><span class="n">01</span><span class="pipe">|</span><span class="name">Ubuntu</span><span class="hint">The Friendly Start</span></div>
+      <div class="row"><span class="n">02</span><span class="pipe">|</span><span class="name">Debian</span><span class="hint">Rock of Ages</span></div>
+      <div class="row"><span class="n">03</span><span class="pipe">|</span><span class="name">Slackware</span><span class="hint">Living Museum</span></div>
+      <div class="row"><span class="n">04</span><span class="pipe">|</span><span class="name">Linux Mint</span><span class="hint">Windows, But Good</span></div>
+      <div class="row"><span class="n">05</span><span class="pipe">|</span><span class="name">Arch Linux</span><span class="hint">i use arch btw</span></div>
+      <div class="row"><span class="n">06</span><span class="pipe">|</span><span class="name">NixOS</span><span class="hint">Grand Finale</span></div>
+      <div style="margin-top: 0.7em;"><span class="prompt">Enter selection:</span><span class="cursor"></span></div>
+    </div>
+  </div>
+</div>
+++++
+
+[.slide-foot]#Refael Sheinker · Internal Tech Talk · 2026#
+
+[%notitle]
+== Ubuntu
+
+[.kicker]#Stop 01 / 06 · Est. 2004#
+[.slide-title]#Ubuntu#
+
+[.lede.ubuntu]#“The distro that convinced an entire generation Linux is easy — then quietly pivoted to enterprise cloud and left beginners reading the manual alone.”#
+
+[.card-grid.cols-4]
+--
+++++
+<div class="card stat tight"><span class="num yellow">2004</span><span class="label">Founded</span></div>
+<div class="card stat tight"><span class="num">Canonical</span><span class="label">Maintainer</span></div>
+<div class="card stat tight"><span class="num yellow">4.10</span><span class="label">First release “Warty”</span></div>
+<div class="card stat tight"><span class="num green">5 yrs</span><span class="label">LTS Support</span></div>
+++++
+--
+
+[.split]
+--
+++++
+<div>
+  <div class="card" style="margin-bottom: 0.7em;">
+    <div class="kicker purple">// origin</div>
+    <p>Founded 2004 by Mark Shuttleworth &amp; Canonical Ltd. Named after Nguni Bantu philosophy — “humanity to others.” Shuttleworth funded it from selling Thawte to VeriSign for $575 million. First release: Ubuntu 4.10 “Warty Warthog,” October 2004.</p>
+  </div>
+  <div class="card" style="margin-bottom: 0.7em;">
+    <div class="kicker purple">// evolution</div>
+    <p>Introduced the controversial Unity desktop in 2011, dropped it in 2017, returned to GNOME. LTS releases every 2 years with 5 years of support.</p>
+  </div>
+  <div class="archetype">
+    <div class="kicker muted">// user archetype</div>
+    The enthusiastic newcomer who recommends Ubuntu to everyone — including their grandmother and their refrigerator.
+  </div>
+</div>
+<div>
+  <div class="warn-box" style="margin-bottom: 0.7em;">
+    <div class="kicker warn">⚠ closed-source asterisks</div>
+    <ul>
+      <li>2012 Amazon Shopping Lens — EFF called it spyware; removed 2016</li>
+      <li>Snap Store backend — proprietary infrastructure</li>
+      <li>ubuntu-report telemetry — opt-out since 18.04</li>
+      <li>FSF does not endorse Ubuntu</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="kicker purple">// secret truth</div>
+    <p>Ubuntu is to Linux what training wheels are to cycling — essential at first, slightly embarrassing to still have at age 30.</p>
+  </div>
+</div>
+++++
+--
+
+[.verdict]
+--
+[.kicker]#$ verdict#
+“Perfect entry point. Just don't tell anyone you're still using it in three years.”
+--
+
+++++
+<a class="yt" href="https://www.youtube.com/watch?v=pMfqCzbSmQU" target="_blank" rel="noopener noreferrer">▶ Watch · Ubuntu's Decline</a>
+++++
+
+[%notitle]
+== Debian
+
+[.kicker]#Stop 02 / 06 · Est. 1993#
+[.slide-title]#Debian#
+
+[.lede.debian]#“So stable it might actually be older than some of its users — and proud of it.”#
+
+[.split.uneven]
+--
+++++
+<div class="timeline">
+  <div class="tl">
+    <div class="year">1993</div>
+    <div>
+      <h3>Founded by Ian Murdock</h3>
+      <p>“Deb” + “Ian” — the name says it all.</p>
+    </div>
+  </div>
+  <div class="tl">
+    <div class="year">1996</div>
+    <div>
+      <h3>Debian 1.1 “Buzz”</h3>
+      <p>First stable release — named after Buzz Lightyear. Toy Story tradition begins.</p>
+    </div>
+  </div>
+  <div class="tl">
+    <div class="year">1997</div>
+    <div>
+      <h3>DFSG Written</h3>
+      <p>Debian Free Software Guidelines defined open source — directly inspired the Open Source Definition.</p>
+    </div>
+  </div>
+  <div class="tl">
+    <div class="year">APT</div>
+    <div>
+      <h3>Package Management Gold Standard</h3>
+      <p>APT became the template for modern package managers — decades ahead of its time.</p>
+    </div>
+  </div>
+</div>
+<div>
+  <div class="kicker">// release branches</div>
+  <div class="card-grid cols-1" style="display:flex;flex-direction:column;gap:0.55em;margin:0.4em 0 0.8em;">
+    <div class="card tight"><div class="branch"><span class="name">stable</span><p>Battle-tested, trusted in production. Moves slowly — by design.</p></div></div>
+    <div class="card tight"><div class="branch"><span class="name">testing</span><p>Next stable in preparation — packages in transit from unstable.</p></div></div>
+    <div class="card tight"><div class="branch"><span class="name">unstable (Sid)</span><p>Named after the destructive kid in Toy Story. Coincidence? No.</p></div></div>
+  </div>
+  <div class="kicker">// spawned distros</div>
+  <div class="pills" style="margin-top:0.4em;">
+    <span class="pill ubuntu">Ubuntu</span>
+    <span class="pill mint">Linux Mint</span>
+    <span class="pill debian">Kali Linux</span>
+    <span class="pill slackware">Raspbian</span>
+  </div>
+</div>
+++++
+--
+
+[.archetype]
+--
+[.kicker.muted]#// user archetype#
+The grey-bearded sysadmin who has strong feelings about free software licensing at dinner parties.
+--
+
+[.verdict]
+--
+Debian: bedrock of the Linux ecosystem — opinionated about freedom, slow to ship, and proud of both.
+--
+
+++++
+<a class="yt" href="https://www.youtube.com/watch?v=oZZ7dpJgdOs" target="_blank" rel="noopener noreferrer">▶ Watch · What is Debian GNU/Linux?</a>
+++++
+
+[%notitle]
+== Slackware
+
+[.kicker.danger]#Stop 03 / 06#
+[.slide-title]#Slackware#
+
+[.lede.slackware]#“The oldest surviving Linux distribution — and every single byte of that age is visible in the install process.”#
+
+[.split]
+--
+++++
+<div>
+  <div class="kv">
+    <div class="kv-row"><span class="muted">Founded</span><span>July 16, 1993</span></div>
+    <div class="kv-row"><span class="muted">Maintainers</span><span class="yellow">1 (Patrick Volkerding)</span></div>
+    <div class="kv-row"><span class="muted">Deps resolved by</span><span>You</span></div>
+    <div class="kv-row"><span class="muted">GUI installer</span><span class="red">No</span></div>
+    <div class="kv-row"><span class="muted">Hand-holding</span><span class="red">No</span></div>
+    <div class="kv-row"><span class="muted">Difficulty rating</span><span class="red">∞ / 10</span></div>
+  </div>
+  <div class="cmd" style="margin-top:0.8em;">You are the package manager</div>
+</div>
+<div>
+  <div class="card" style="margin-bottom:0.65em;">
+    <h3>Origin</h3>
+    <p>Created by Patrick Volkerding, first released July 16, 1993. Based on SLS Linux, published via FTP on funet.fi. “Slackware” was a joke about “slacking off.” One of the most widely used distros of the 1990s.</p>
+  </div>
+  <div class="card" style="margin-bottom:0.65em;">
+    <h3>Design Philosophy</h3>
+    <p>KISS principle taken to its logical extreme. No automatic dependency resolution. No GUI installer. No hand-holding.</p>
+  </div>
+  <div class="card">
+    <h3>One-Man Army · Slackware 15.0</h3>
+    <p>Released February 2022 — after a six-year development cycle. Patrick Volkerding maintains it almost entirely alone.</p>
+  </div>
+</div>
+++++
+--
+
+[.verdict]
+--
+[.kicker]#$ verdict#
+“If you can install Slackware from scratch, you can fix literally anything on any system, ever.”
+--
+
+[.small]#Slackware is the Linux puritan's choice — no conveniences, no excuses, and legendary respect for those who persist.#
+
+++++
+<a class="yt" href="https://www.youtube.com/watch?v=r9nVqW8oEqw" target="_blank" rel="noopener noreferrer">▶ Watch · What is Slackware? (oldest surviving distro)</a>
+++++
+
+[%notitle]
+== Linux Mint
+
+[.kicker]#Stop 04 / 06#
+[.slide-title]#Linux Mint#
+
+[.lede.mint]#Everything Ubuntu promised, minus the corporate rebranding and the inexplicable insistence on Snap.#
+
+++++
+<div class="card-grid cols-4" style="margin-bottom:0.85em;">
+  <div class="card stat tight"><span class="num green">2006</span><span class="label">Founded</span></div>
+  <div class="card stat tight"><span class="num">Cinnamon</span><span class="label">Desktop born 2011</span></div>
+  <div class="card stat tight"><span class="num yellow">#1</span><span class="label">DistroWatch most visited</span></div>
+  <div class="card stat tight"><span class="num purple">Adult</span><span class="label">User type: sensible</span></div>
+</div>
+++++
+
+[.split]
+--
+++++
+<div class="card">
+  <div class="kicker purple">// origin story</div>
+  <p>Founded 2006 by Clément Lefèbvre as a polished Ubuntu derivative. When Canonical removed GNOME 2 in 2011, Clément forked it and created the Cinnamon desktop — one of the most beloved DEs in Linux.</p>
+</div>
+<div class="card accent-green">
+  <div class="kicker">★ ZERO SNAP TRAUMA</div>
+  <p style="color:var(--text);font-size:0.68em;">Ships with codecs and apps pre-installed. Philosophical opposition to Canonical's packaging. The easiest path from Windows to Linux.</p>
+</div>
+++++
+--
+
+++++
+<div class="card-grid cols-3" style="margin-top:0.85em;">
+  <div class="card accent-green">
+    <h3>Cinnamon Desktop</h3>
+    <p>Beginner-friendly, no Wayland drama — just works out of the box.</p>
+  </div>
+  <div class="card accent-green">
+    <h3>No Snap Packages</h3>
+    <p>Codecs and apps pre-installed; a principled “no” to Canonical's store.</p>
+  </div>
+  <div class="card accent-green">
+    <h3>Windows Migrants Welcome</h3>
+    <p>Familiar workflows, zero first-boot drama.</p>
+  </div>
+</div>
+++++
+
+[.verdict]
+--
+Mint users are statistically the most likely to actually get work done instead of tweaking dotfiles for six hours.
+--
+
+++++
+<a class="yt" href="https://www.youtube.com/watch?v=lRsoxEkDCE0" target="_blank" rel="noopener noreferrer">▶ Watch · Cinnamon out of the box (no tweaks)</a>
+++++
+
+[%notitle]
+== Arch Linux
+
+[.kicker]#Stop 05 / 06 · Est. 2002 · Rolling Release · KISS#
+[.slide-title]#Arch Linux — “I use Arch btw”#
+
+[.split]
+--
+++++
+<div class="term">
+  <div class="term-bar">
+    <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+    <span class="term-title">arch-daily.sh</span>
+  </div>
+  <pre><span class="prompt">$</span> sudo pacman -Syu
+<span class="comment"># update everything, always</span>
+<span class="blue">::</span> Synchronizing package databases...
+<span class="blue">::</span> Starting full system upgrade...
+
+<span class="prompt">$</span> echo "btw i use arch"
+<span class="green">btw i use arch</span>
+
+<span class="prompt">$</span> cat /etc/os-release | grep NAME
+NAME="Arch Linux"</pre>
+</div>
+++++
+
+++++
+<div>
+  <div class="card" style="margin-bottom:0.65em;">
+    <div class="kicker purple">// origin</div>
+    <p>Created 2002 by Judd Vinet, inspired by minimalist CRUX Linux. Leadership passed to Aaron Griffin in 2007, then community-led from 2020.</p>
+  </div>
+  <div class="card" style="margin-bottom:0.65em;">
+    <div class="kicker purple">// rolling release model</div>
+    <p>No “Arch 2.0” — install once, update continuously forever. Packages stay cutting-edge; users stay reading upgrade notes.</p>
+  </div>
+  <div class="card">
+    <p>“I use Arch btw” originated on Linux forums ~2011, went mainstream on Reddit by 2018. In 2021, <span class="mono green">archinstall</span> made setup less terrifying. The smugness remains.</p>
+  </div>
+</div>
+++++
+--
+
+[.archetype]
+--
+[.kicker.muted]#// user archetype#
+The person who mentions their OS in unrelated conversations, their dating profile, and their last will and testament.
+--
+
+[.verdict]
+--
+The Arch Wiki — so thorough that users on other distros consult it daily. The finest documentation in all of computing.
+--
+
+[.small]#Arch is the Linux enthusiast's rite of passage — minimalist by design, maximalist by reputation.#
+
+[%notitle]
+== FreeBSD
+
+[.kicker.pink]#// honorable mention · NOT LINUX · HONORARY UNIX#
+[.slide-title]#FreeBSD#
+
+[.lede.freebsd]#“Not Linux. Not even close. And that is precisely the point.”#
+
+[.lede.pink]#FreeBSD users do not hop. They arrived. They stayed.#
+
+[.card-grid.cols-5]
+--
+++++
+<div class="card stat tight"><span class="num">30+</span><span class="label">Years of lineage</span></div>
+<div class="card stat tight"><span class="num red">Own</span><span class="label">Kernel (not Linux)</span></div>
+<div class="card stat tight"><span class="num green">Native</span><span class="label">ZFS support</span></div>
+<div class="card stat tight"><span class="num yellow">2017</span><span class="label">Last reinstall</span></div>
+<div class="card stat tight"><span class="num">Battle-tested</span><span class="label">Reliability</span></div>
+++++
+--
+
+++++
+<div class="pills" style="margin:0.8em 0;">
+  <span class="pill ubuntu">Netflix</span>
+  <span class="pill debian">PlayStation</span>
+  <span class="pill mint">WhatsApp</span>
+  <span class="pill slackware">Your home router</span>
+</div>
+<div class="card-grid cols-3">
+  <div class="card">
+    <div class="kicker purple">// key_points[0]</div>
+    <p>FreeBSD is a complete UNIX-like OS with its own kernel and userland — not a Linux distribution, not a derivative. A separate lineage entirely.</p>
+  </div>
+  <div class="card">
+    <div class="kicker purple">// key_points[1]</div>
+    <p>Native ZFS support years before Linux caught up. When everyone else was arguing about filesystems, FreeBSD already had the answer.</p>
+  </div>
+  <div class="card">
+    <div class="kicker purple">// key_points[2]</div>
+    <p>The FreeBSD Handbook makes the Arch Wiki feel like a README. Comprehensive, precise, and maintained with the rigor of the OS itself.</p>
+  </div>
+</div>
+++++
+
+[.archetype]
+--
+[.kicker.muted]#archetype:#
+The ex-Linux user who grew tired of kernel politics — hasn't reinstalled since 2017.
+--
+
+[.verdict]
+--
+FreeBSD earns its honorable mention with 30+ years of powering the internet's most demanding workloads.
+--
+
+[%notitle]
+== NixOS
+
+[.kicker.blue]#Stop 06 / 06 · Grand Finale · ENDGAME#
+[.slide-title]#NixOS#
+
+[.lede.nixos]#“You have tried every other distro. You are ready. Welcome to the final boss of Linux.”#
+
+[.split]
+--
+++++
+<div class="term">
+  <div class="term-bar">
+    <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+    <span class="term-title">/etc/nixos/configuration.nix</span>
+  </div>
+  <pre><span class="ident">services</span>.<span class="ident">nginx</span>.<span class="ident">enable</span> = <span class="kw">true</span>;
+<span class="ident">users</span>.<span class="ident">users</span>.<span class="ident">alice</span>.<span class="ident">isNormalUser</span> = <span class="kw">true</span>;
+<span class="ident">environment</span>.<span class="ident">systemPackages</span> = [
+  <span class="ident">pkgs</span>.<span class="ident">git</span>
+  <span class="ident">pkgs</span>.<span class="ident">vim</span>
+];
+<span class="comment"># $ nixos-rebuild switch</span>
+<span class="comment"># atomic update. rollback anytime.</span></pre>
+</div>
+++++
+
+++++
+<div>
+  <p class="small" style="margin-bottom:0.7em;">Born from Eelco Dolstra's 2003 PhD at Utrecht University. Packages installed via cryptographic hashes in an immutable store. NixOS 1.0 shipped 2013 — by 2022, “infrastructure as code” made it fashionable.</p>
+  <div class="card-grid cols-2">
+    <div class="card tight"><h3>Fully Declarative</h3></div>
+    <div class="card tight"><h3>Atomic Rollbacks</h3></div>
+    <div class="card tight"><h3>Reproducible Builds</h3></div>
+    <div class="card tight"><h3>Home Manager</h3></div>
+    <div class="card tight"><h3>Functional Nix Lang</h3></div>
+    <div class="card tight"><h3>The OS is a value</h3></div>
+  </div>
+  <div class="card" style="margin-top:0.7em;">
+    <div class="kicker blue">// WHY_IT_IS_DIFFERENT</div>
+    <p>→ Not just a package manager — a new philosophy<br>
+    → Every package is a pure function. The OS is a value.<br>
+    → Your config is a Git repo. Dotfiles, shell, editor — all managed.</p>
+  </div>
+</div>
+++++
+--
+
+[.archetype]
+--
+[.kicker.muted]#USER_ARCHETYPE#
+Cannot explain NixOS without first explaining what a monad is. Described as “a cult — but the good kind.”
+--
+
+[.verdict]
+--
+“Once you use NixOS, you cannot go back — not because it's perfect, but because the sunk-cost fallacy is now load-bearing.”
+--
+
+++++
+<a class="yt" href="https://www.youtube.com/watch?v=9OMDnZWXjn4" target="_blank" rel="noopener noreferrer">▶ Watch · NixOS Explained</a>
+++++
+
+[%notitle]
+== The Distro Hopper's Progression
+
+[.kicker]#THE ARC#
+[.slide-title]#The Distro Hopper's Progression#
+
+[.lede]#“Every Linux user follows the same arc — it is basically a spiritual journey with more terminal windows.”#
+
+++++
+<div class="card-grid cols-4">
+  <div class="card accent-green">
+    <div class="kicker">STAGE 01</div>
+    <h3>Curious</h3>
+    <p class="quote">“I'll just try Ubuntu, it looks friendly”</p>
+    <div class="cmd">$ sudo apt install hope</div>
+  </div>
+  <div class="card accent-blue">
+    <div class="kicker blue">STAGE 02</div>
+    <h3>Opinionated</h3>
+    <p class="quote">“Actually, Debian is more stable”</p>
+    <div class="cmd">$ man stability</div>
+  </div>
+  <div class="card accent-yellow">
+    <div class="kicker warn">STAGE 03</div>
+    <h3>Dangerous</h3>
+    <p class="quote">“Have you considered Arch? I use Arch btw”</p>
+    <div class="cmd">$ btw --i-use-arch</div>
+  </div>
+  <div class="card accent-purple">
+    <div class="kicker purple">STAGE 04</div>
+    <h3>Enlightened</h3>
+    <p class="quote">“My entire OS is a Git repository”</p>
+    <div class="cmd">$ git commit -m "os: exist"</div>
+  </div>
+</div>
+<div class="card accent-pink" style="margin-top:0.8em;">
+  <div class="kicker pink">STAGE 05 · TRANSCENDENT</div>
+  <div class="split" style="margin-top:0.4em;">
+    <div>
+      <h3>Helps strangers on forums at 02:00</h3>
+      <p>Runs 4 distros in VMs. Uses Windows at work — tells no one.</p>
+    </div>
+    <div class="cmd">$ ssh stranger@02:00</div>
+  </div>
+</div>
+++++
+
+[.source]#Source: programmerhumor.io/memes/distros#
+
+[%notitle]
+== What Your Distro Says About You
+
+[.kicker]#PERSONALITY TYPES#
+[.slide-title]#What Your Distro Says About You#
+
+[.lede]#“Your Linux distro is a personality type — and we have the data to prove it (approximately).”#
+
+++++
+<div class="card-grid cols-3">
+  <div class="card accent-ubuntu">
+    <div class="kicker" style="color:var(--ubuntu);">Ubuntu</div>
+    <h3>The Realist</h3>
+    <p class="quote">“I want Linux to work”</p>
+    <div class="cmd">$ sudo apt install hope</div>
+  </div>
+  <div class="card accent-red">
+    <div class="kicker danger">Debian</div>
+    <h3>The Classicist</h3>
+    <p class="quote">“I want Linux to be stable forever”</p>
+    <div class="cmd">$ man stability</div>
+  </div>
+  <div class="card accent-yellow">
+    <div class="kicker warn">Slackware</div>
+    <h3>The Purist</h3>
+    <p class="quote">“I want Linux to be Linux, exactly as Linus intended, circa 1993”</p>
+    <div class="cmd">$ ./configure && make && make install</div>
+  </div>
+  <div class="card accent-green">
+    <div class="kicker">Linux Mint</div>
+    <h3>The Pragmatist</h3>
+    <p class="quote">“I want Windows but better”</p>
+    <div class="cmd">$ apt install cinnamon && relax</div>
+  </div>
+  <div class="card accent-blue">
+    <div class="kicker blue">Arch Linux</div>
+    <h3>The Masochist</h3>
+    <p class="quote">“I want to suffer productively — with excellent documentation”</p>
+    <div class="cmd">$ btw --i-use-arch</div>
+  </div>
+  <div class="card accent-purple">
+    <div class="kicker purple">NixOS</div>
+    <h3>The Final Form</h3>
+    <p class="quote">“I want my OS to be a pure function”</p>
+    <div class="cmd">$ nixos-rebuild switch --flake .#enlightenment</div>
+  </div>
+</div>
+++++
+
+[.source]#Source: youtube.com/watch?v=ORGjwyXBSiY#
+
+[%notitle]
+== So... Which One Should You Use?
+
+[.kicker]#$ ./pick-your-distro.sh --honest#
+[.slide-title]#So... Which One Should You Use?#
+
+[.lede]#The best distro is the one you actually get work done on — but that has never stopped anyone from trying the next one.#
+
+++++
+<div style="display:flex;flex-direction:column;gap:0.45em;">
+  <div class="guide-row">
+    <div class="q">New to Linux?</div>
+    <div class="a">Linux Mint</div>
+    <div class="hint">no shame in training wheels</div>
+  </div>
+  <div class="guide-row">
+    <div class="q">Developer / Power User?</div>
+    <div class="a">Arch Linux</div>
+    <div class="hint">will make you feel very smart (results may vary)</div>
+  </div>
+  <div class="guide-row">
+    <div class="q">Never Break + Feel Superior?</div>
+    <div class="a">Slackware</div>
+    <div class="hint">Patrick Volkerding patching since 1993</div>
+  </div>
+  <div class="guide-row">
+    <div class="q">Need Things to Never Break?</div>
+    <div class="a">Debian</div>
+    <div class="hint">Ever. Seriously.</div>
+  </div>
+  <div class="guide-row">
+    <div class="q">Configure OS Like Code?</div>
+    <div class="a">NixOS</div>
+    <div class="hint">waiting for you at the end of the rainbow</div>
+  </div>
+</div>
+<div class="kicker" style="margin-top:0.85em;">// the-inevitable-arc.log</div>
+<div class="arc">
+  <div class="step"><strong>Ubuntu</strong>the friendly start</div>
+  <span class="arrow">→</span>
+  <div class="step"><strong>Linux Mint</strong>windows, but good</div>
+  <span class="arrow">→</span>
+  <div class="step"><strong>Debian</strong>rock solid, rock slow</div>
+  <span class="arrow">→</span>
+  <div class="step"><strong>Arch Linux</strong>i use arch btw</div>
+  <span class="arrow">→</span>
+  <div class="step"><strong>Slackware</strong>briefly. very briefly.</div>
+  <span class="arrow">→</span>
+  <div class="step"><strong>NixOS</strong>final form. cannot leave.</div>
+</div>
+++++
+
+[.protip]
+--
+[.kicker]#Pro Tip#
+All roads lead to NixOS eventually — the only variable is how many distros you reinstall along the way.
+--
+
+[%notitle]
+== The Distro Hall of Shame
+
+[.kicker.danger]#THESE DISTROS EXIST. WE ACKNOWLEDGE THEY EXIST. WE SHALL NEVER SPEAK OF THEM AGAIN.#
+[.slide-title]#The Distro Hall of Shame#
+
+++++
+<div class="card-grid cols-3">
+  <div class="card roast accent-red">
+    <div class="aka">Unpaid QA Engineer</div>
+    <h3>Fedora</h3>
+    <p class="quote">“Red Hat's beta testing program, disguised as an OS.”</p>
+    <p>Ships cutting-edge features approximately six months before they actually work. Your breakage is a feature request.</p>
+  </div>
+  <div class="card roast accent-pink">
+    <div class="aka">Gorgeous &amp; Concerning</div>
+    <h3>Deepin</h3>
+    <p class="quote">“Objectively gorgeous, subjectively concerning privacy policy.”</p>
+    <p>The most beautiful desktop on Linux, shipped from China, with a privacy policy you will not read until it's too late.</p>
+  </div>
+  <div class="card roast accent-blue">
+    <div class="aka">Guilt-as-a-Service</div>
+    <h3>elementary OS</h3>
+    <p class="quote">“macOS for people who can't afford a Mac.”</p>
+    <p>Asks you to pay at download. Looks gorgeous. Feels like macOS. Is not macOS. You paid anyway.</p>
+  </div>
+  <div class="card roast accent-yellow">
+    <div class="aka">Ubuntu + Orange Paint</div>
+    <h3>Pop!_OS</h3>
+    <p class="quote">“System76 changed the accent color and called it innovation.”</p>
+    <p>Ubuntu with a tiling window manager and an exclamation mark in the name. Users are very passionate about it.</p>
+  </div>
+  <div class="card roast accent-purple">
+    <div class="aka">Windows™ Cosplay</div>
+    <h3>Zorin OS</h3>
+    <p class="quote">“The distro you install for relatives so they stop calling you.”</p>
+    <p>Looks exactly like Windows. Works better than Windows. Your relatives still call you.</p>
+  </div>
+  <div class="card roast accent-red">
+    <div class="aka">Arch, But Slower &amp; On Fire</div>
+    <h3>Manjaro</h3>
+    <p class="quote">“All the Arch smugness, none of the security patching.”</p>
+    <p>Famously renewed an expired SSL cert using <span class="mono">--insecure</span> flags. Ships delayed packages so you get the cutting-edge experience, minus the cutting edge.</p>
+  </div>
+</div>
+++++
+
+[.slide-foot]#Refael Sheinker — 2026#
